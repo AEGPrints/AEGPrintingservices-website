@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AEG Printing Services</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffd6e0, #ffe9f0, #e0f7ff, #fef6d2);
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 6px dotted #ff69b4;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+    }
+
+    header h1 { 
+      font-size: 2.5em;
+      margin: 10px 0 5px;
+      color: #ff1493;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ffdefc;
+      border-bottom: 3px solid #f39ac4;
+    }
+
+    nav button {
+      padding: 15px 25px;
+      background: none;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      color: #ff1493;
+      transition: background 0.3s, color 0.3s;
+      font-weight: bold;
+    }
+
+    nav button.active, nav button:hover {
+      background: #ff69b4;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+      columns: 2;
+      column-gap: 40px;
+    }
+
+    .services li {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #ff1493;
+    }
+
+    .about {
+      line-height: 1.6;
+      text-align: justify;
+      .about-us {
+  position: relative;
+  padding: 40px;}
+
+  .about-image{
+  position: absolute;
+  right: 15px;
+  top: 25%;
+  transform: translateY(-25%);
+  width: 120px; /* 👈 small thumbnail size */
+  height: auto;
+  border-radius: 12px; /* optional for rounded corners */
+}
+
+
+}
+    
+
+    .contact {
+      line-height: 1.6;
+      background: #ffe9f0;
+      padding: 20px;
+      border-top: 2px dashed #f39ac4;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .contact a {
+      color: #ff1493;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fff0f5;
+    }
+
+    form button {
+      background: #ff1493;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background: #e01384;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #ff69b4;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 1em;
+      margin-top: 40px;
+      border-top: 5px dotted #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="AEG Logo.jpg" alt="AEG Logo">
+    <h1>AEG Printing Services</h1>
+    <p>Print • Customize • Craft</p>
+  </header>
+
+  <nav>
+    <button class="tab-button active" data-tab="home">Home</button>
+    <button class="tab-button" data-tab="services">Services</button>
+    <button class="tab-button" data-tab="about">About Us</button>
+    <button class="tab-button" data-tab="contact">Contact</button>
+  </nav>
+
+  <section id="home" class="tab-content active">
+    <h2>Welcome to AEG Printing Services</h2>
+    <p>You imagine, we customize. Your trusted family-owned printing business in Taytay, Rizal!</p>
+  </section>
+
+  <section id="services" class="tab-content">
+    <h2>Our Services</h2>
+    <div class="services">
+      <ul>
+        <li>Document Printing</li>
+        <li>Photocopy</li>
+        <li>Photo Printing</li>
+        <li>Scan</li>
+        <li>Rush I.D.</li>
+        <li>Laminate</li>
+        <li>Sticker / Logo</li>
+        <li>T-shirt Printing (Sublimation / DTF)</li>
+        <li>Poster / Flyer</li>
+        <li>Sintra Board</li>
+        <li>Souvenir</li>
+        <li>Invitation</li>
+        <li>Name / Bag Tag</li>
+        <li>Birthday Party Favor</li>
+        <li>Personalized Notebook / Pad / Paper / Pencil / Lanyard</li>
+        <li>School Supplies</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="tab-content">
+    <h2>About Us</h2>
+     <img src="Nabarte Family Pic.png" alt="Nabarte">
+    <div class="about">
+      <p>Established in 2025, AEG Printing Services is a proud, small family-owned printing business based in Taytay Rizal. What began as a passion project quickly turned into a creative venture built on love, teamwork, and the desire to serve our community with high-quality, customized printing solutions.</p>
+      <p>The name AEG holds a special place in our hearts, it stands for our children, Ethan Gabriel and Aiah Georgina. Every project we take on is inspired by them, reminding us why we do what we do: to build something meaningful for our family, and to support others in doing the same.</p>
+      <p>Whether you’re a local business owner, a first-time entrepreneur, or someone planning a special occasions, or rush projects, we’re here to help bring your vision to life, beautifully and affordably.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="tab-content">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>Address:</strong> 13A Maalalahanin St. Taytay Rizal</p>
+      <p><strong>Phone:</strong> <a href="tel:+639278995226">0927-8995226</a></p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61565870043675" target="_blank">AEG Printing Services (AEG Prints)</a></p>
+      <p><strong>Email:</strong> <a href="mailto:aegprintingservices@gmail.com">aegprintingservices@gmail.com</a></p>
+      <form action="mailto:aegprintingservices@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <iframe src="https://www.google.com/maps?q=13A+Maalalahanin+St.+Taytay+Rizal&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AEG Printing Services. All rights reserved. | Designed with love ready for you.</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        contents.forEach(tab => tab.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
